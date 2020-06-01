@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/estilos.css">
+    <title>Calculador simple Mayor/Menor/Promedio de edad</title>
+</head>
+<body>
+    
+    <nav class="form-box">
+        <form id="calculador-edades">
+            <div class="input-box">
+                <label for="input-integrantes"><strong>Cuantos integrantes hay en tu familia?</strong></label> <br>
+                <input type="text" id="input-integrantes" name="input-integrantes" placeholder="Ingresar cantidad de integrantes">
+                <button type="submit" id="boton-integrantes" name="boton-integrantes">Enviar</button>
+            </div>
+
+            <ul id="errores">
+
+            </ul>
+        
+            <div class="integrantes-box">
+                <div id="integrantes" name="integrantes">
+                </div>
+            </div>
+    
+            <button type="submit" id="boton-calcular" class="oculto">Calcular</button>
+    
+            <div class="calculos-box">
+                <div id="calculos" name="calculos" class="oculto">
+                    <p>La mayor edad es: <strong id="mayor-edad"></strong></p>
+                    <p>La menor edad es: <strong id="menor-edad"></strong></p>
+                    <p>El promedio de edad es: <strong id="promedio-edad"></strong></p>
+                </div>    
+            </div>
+
+            <button type="submit" id="resetear" class="oculto">Resetear</button>
+        </form>
+    </nav>
+
+    <script src="/script/calculos.js"></script>
+    <script src="/script/main.js"></script>
+</body>
+</html>
